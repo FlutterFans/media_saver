@@ -1,14 +1,51 @@
 # media_saver
 
-save media file for Android and IOS
+Quick and Simple save media file for Android and IOS
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+- Implements native permission (Android) and authorization requests (iOS)
+- Save image to Pictures for Android, (IOS Developing)
+- Support save jpg/png/gif image
+- Support set image name, set image dir, set image suffix
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+Add it to your pubspec.yaml file
+```
+dependencies:
+   media_saver: <PLUGIN_VERSION>
+```
+
+Install it
+
+```
+pub get
+```
+
+Import it
+
+```
+import 'package:media_saver/media_saver.dart';
+```
+
+## Usage
+
+1.
+```dart
+    var response = await Dio().get(
+      'https://flutter.dev/assets/flutter-lockup-c13da9c9303e26b8d5fc208d2a1fa20c1ef47eb021ecadf27046dea04c0cebf6.png',
+      options: Options(responseType: ResponseType.bytes),
+    );
+
+    String path = await MediaSaver.saveImage(
+      Uint8List.fromList(response.data),
+      imageType: ImageType.PNG,
+      fileName: 'saveFileName',
+      directory: 'demo',
+    );
+```
+
+## License
+
+MIT [@yk3372](https://github.com/FlutterFans/media_saver)

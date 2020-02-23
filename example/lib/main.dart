@@ -22,24 +22,24 @@ class _MyAppState extends State<MyApp> {
 
   void _saveImage() async {
     setState(() {
-      state = '开始下载';
+      state = 'begin download';
     });
     var response = await Dio().get(
-      'http://a4.att.hudong.com/21/09/01200000026352136359091694357.jpg',
+      'https://flutter.dev/assets/flutter-lockup-c13da9c9303e26b8d5fc208d2a1fa20c1ef47eb021ecadf27046dea04c0cebf6.png',
       options: Options(responseType: ResponseType.bytes),
     );
     setState(() {
-      state = '下载完成保存中...';
+      state = 'download success, saving...';
     });
 
     String path = await MediaSaver.saveImage(
       Uint8List.fromList(response.data),
       imageType: ImageType.JPG,
-//      fileName: 'saveFileName',
-//      directory: 'demo',
+      fileName: 'saveFileName',
+      directory: 'demo',
     );
     setState(() {
-      state = '保存成功： $path';
+      state = 'savePath： $path';
     });
   }
 
@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('media saver'),
         ),
         body: Container(
           child: Column(

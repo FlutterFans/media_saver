@@ -7,9 +7,10 @@ class MediaSaver {
   static const MethodChannel _channel = const MethodChannel('media_saver');
 
   ///
-  /// save Image to Album, Android save to Pictures
-  /// [ImageType] 保存图片类型
-  /// [fileName] 保存图片名称，默认时间戳,无需带扩展名
+  /// save Image to Album, Android is save to Pictures
+  /// [ImageType] save image type, default is jpg
+  /// [fileName] save image file name, default milliseconds, eg. target_file
+  /// [directory] save image's dir, default save in Pictures
   /// return the file path
   ///
   static Future<String> saveImage(
