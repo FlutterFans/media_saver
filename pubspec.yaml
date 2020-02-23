@@ -1,8 +1,8 @@
 name: media_saver
 description: save media file for Android and IOS
-version: 0.0.1
-author:
-homepage:
+version: 1.0.0
+author: yk3372 & wsh794972562
+homepage: https://github.com/FlutterFans/media_saver
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -35,8 +35,6 @@ flutter:
         package: com.github.flutterfans.media_saver
         pluginClass: MediaSaverPlugin
       ios:
-        pluginClass: MediaSaverPlugin
-      macos:
         pluginClass: MediaSaverPlugin
 
   # To add assets to your plugin package, add an assets section, like this:

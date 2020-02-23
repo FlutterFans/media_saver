@@ -48,4 +48,4 @@ import 'package:media_saver/media_saver.dart';
 
 ## License
 
-MIT [@yk3372](https://github.com/FlutterFans/media_saver)
+MIT [@yk3372]() [@wsh794972562]()
