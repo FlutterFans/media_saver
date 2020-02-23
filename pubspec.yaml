@@ -1,11 +1,11 @@
 name: media_saver
 description: save media file for Android and IOS
 version: 1.0.0
-author: yk3372 & wsh794972562
 homepage: https://github.com/FlutterFans/media_saver
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
+  flutter: ">=1.10.0 <2.0.0"
 
 dependencies:
   flutter:
