@@ -4,8 +4,8 @@ Quick and Simple save media file for Android and IOS
 
 ## Features
 
-- Implements native permission (Android) and authorization requests (iOS)
-- Save image to Pictures for Android, (IOS Developing)
+- Implements native permission (Android)
+- Save image to Pictures for Android and IOS
 - Support save jpg/png/gif image
 - Support set image name, set image dir, set image suffix
 
