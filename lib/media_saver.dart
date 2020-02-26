@@ -13,7 +13,7 @@ class MediaSaver {
   /// [directory] save image's dir, default save in Pictures
   /// return the file path
   ///
-  static Future<String> saveImage(
+  static Future<bool> saveImage(
     Uint8List imageBytes, {
     ImageType imageType,
     String fileName,

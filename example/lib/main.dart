@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
       state = 'download success, saving...';
     });
 
-    String path = await MediaSaver.saveImage(
+    bool path = await MediaSaver.saveImage(
       Uint8List.fromList(response.data),
       imageType: ImageType.JPG,
       fileName: 'saveFileName',
