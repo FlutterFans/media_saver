@@ -52,7 +52,7 @@ public class FileHelper {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 saveImageToGallery();
             } else {
-                result.success(null);
+                result.success(false);
             }
         }
     }
@@ -133,12 +133,13 @@ public class FileHelper {
             MethodChannel.Result result = resultWeakReference.get();
 
             if (activity == null || file == null) {
-                result.success(null);
+                result.success(false);
                 return;
             }
             Uri uri = Uri.fromFile(file);
             activity.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri));
-            result.success(file.getPath());
+            result.success(true);
+//            result.success(file.getPath());
         }
     }
 
