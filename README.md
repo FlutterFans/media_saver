@@ -29,6 +29,11 @@ Import it
 import 'package:media_saver/media_saver.dart';
 ```
 
+For iOS you need setting info.plist with
+```
+  Privacy - Photo Library Additions Usage Description
+```
+
 ## Usage
 
 1.
