@@ -1,6 +1,6 @@
 # media_saver
 
-[![Pub](https://img.shields.io/pub/v/dio.svg?style=flat-square)](https://pub.dartlang.org/packages/media_saver)
+[![Pub](https://img.shields.io/pub/v/media_saver.svg?style=flat-square)](https://pub.dartlang.org/packages/media_saver)
 
 Quick and Simple save media file for Android and IOS
 
