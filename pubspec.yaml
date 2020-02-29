@@ -1,6 +1,6 @@
 name: media_saver
 description: save media file for Android and IOS
-version: 1.0.0
+version: 1.0.2
 homepage: https://github.com/FlutterFans/media_saver
 
 environment:
