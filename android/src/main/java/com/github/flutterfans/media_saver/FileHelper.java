@@ -49,7 +49,7 @@ public class FileHelper {
 
     private void doNext(int requestCode, int[] grantResults) {
         if (requestCode == WRITE_EXTERNAL_STORAGE_REQUEST_CODE) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 saveImageToGallery();
             } else {
                 result.success(false);
