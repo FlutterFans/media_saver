@@ -1,6 +1,6 @@
 name: media_saver
-description: save media file for Android and IOS
-version: 1.0.0
+description: Quick and Simple save media file for Android and IOS,for android its Implements native permission ,For iOS you need setting info.plist with 'Privacy - Photo Library Additions Usage Description',Support save jpg/png/gif image,Support set image name, set image dir, set image suffix
+version: 1.0.2
 homepage: https://github.com/FlutterFans/media_saver
 
 environment:
@@ -36,7 +36,6 @@ flutter:
         pluginClass: MediaSaverPlugin
       ios:
         pluginClass: MediaSaverPlugin
-
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -47,7 +46,6 @@ flutter:
   #
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
   # To add custom fonts to your plugin package, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
